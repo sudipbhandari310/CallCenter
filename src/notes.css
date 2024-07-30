@@ -1,0 +1,28 @@
+.notes {
+  padding-top: 30%;
+  position: fixed; /* Sticks the element to the viewport */
+  top: 0;
+  left: 0;
+  border-right: 1px solid #ccc;
+  padding: 8px;
+  border-right: 1px solid #ccc;
+  max-width: 200px; /* Adjust the width as needed */
+  min-height: 100vh; /* Full height of the viewport */
+  background-color: #f8f9fa; /* Light background for notes */
+}
+
+.noteTitle {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.noteContent {
+  margin-top: 5px;
+  font-size: 1rem;
+  text-align: left;
+  color: #333;
+}
+
+/* .appContainer .row {
+  display: flex;
+} */
