@@ -1,4 +1,5 @@
 export const steps = [
+  
   {
     title: "Step - 1: Note addition",
     content:
