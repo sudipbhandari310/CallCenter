@@ -1,28 +1,46 @@
 .notes {
-  padding-top: 30%;
-  position: fixed; /* Sticks the element to the viewport */
+  position: fixed;
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
   top: 0;
-  left: 0;
-  border-right: 1px solid #ccc;
-  padding: 8px;
-  border-right: 1px solid #ccc;
-  max-width: 200px; /* Adjust the width as needed */
-  min-height: 100vh; /* Full height of the viewport */
-  background-color: #f8f9fa; /* Light background for notes */
+  left: 5px;
+  border-right: 0.5px solid #ccc;
+  font-size: 14px;
+text-align: left;
+  max-width: 250px;
+  max-height: 60vh;
+  background-color: lightblue;
+  border-radius: 15px;
+  /* overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  /* Hide scrollbar for WebKit browsers */
+  &::-webkit-scrollbar {
+    display: none;
+  } */
 }
 
-.noteTitle {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
 
-.noteContent {
-  margin-top: 5px;
-  font-size: 1rem;
-  text-align: left;
-  color: #333;
+@media (max-width: 1025px) {
+  .notes {
+    opacity: 0;
+  }
 }
+/* @media (max-width: 1400px) {
+  .notes {
+    max-width: 150px;
+  }
+} */
 
-/* .appContainer .row {
-  display: flex;
+
+@media (max-width: 480px) {
+  .notes {
+    max-width: 100%; /* Full width for small screens */
+    left: 0;
+    right: 0; /* Stretch across the screen */
+    border-right: none; /* Remove border for clean appearance */
+    padding: 5px; /* Adjust padding */
+    max-height: 50vh; /* Reduce height to fit better */
+  }
 } */
