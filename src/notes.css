@@ -7,17 +7,16 @@
   left: 5px;
   border-right: 0.5px solid #ccc;
   font-size: 14px;
-text-align: left;
+  text-align: left;
   max-width: 250px;
   max-height: 60vh;
   background-color: lightblue;
   border-radius: 15px;
-  
+
   &::-webkit-scrollbar {
     display: none;
-  } */
+  }
 }
-
 
 @media (max-width: 1025px) {
   .notes {
@@ -30,7 +29,6 @@ text-align: left;
   }
 } */
 
-
 @media (max-width: 480px) {
   .notes {
     max-width: 100%; /* Full width for small screens */
@@ -40,4 +38,4 @@ text-align: left;
     padding: 5px; /* Adjust padding */
     max-height: 50vh; /* Reduce height to fit better */
   }
-} */
+}
