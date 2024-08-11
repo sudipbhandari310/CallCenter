@@ -3,7 +3,8 @@ import { ListGroup, Form, Row, Col } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa';
 import { FcApproval } from 'react-icons/fc';
 import './style.css';
-import './notes.css'
+import './notes.css';
+import { steps } from './data/steps';
 
 const questions = [
   {
@@ -1559,11 +1560,11 @@ const App = () => {
 
       <div className='notes'>
         <h3 className='noteTitle'>Notes:</h3>
-        <p className='noteContent'>
-          Step - 1: Note addition Ask client about exact site having issue (Eg.
-          : Facebook, Facebook Reels, Instagram, Insta Reels, Youtube, Youtube
-          Shorts, Whats app, Viber etc.)
-        </p>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: steps[currentQuestionIndex].content,
+          }}
+        ></div>
       </div>
     </div>
   );
